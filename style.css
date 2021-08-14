@@ -154,7 +154,7 @@
 {
    margin-top: 50px;
    padding-top: 30px;
-   padding-bottom: 200px;
+   padding-bottom: 640px;
    background-color: #EEECEF ;
 
 }
@@ -192,10 +192,7 @@
     
     
 }
-.vignette_restaurant1
-{
-    margin-right: 40px;
-}
+
 .nom_restau
 {
     color: black;
@@ -228,4 +225,45 @@
 
 a{
     text-decoration: none;
+}
+
+.footer_logo
+{
+    margin-left: 15px;
+    font-family: 'Shrikhand';
+    color: white;
+
+}
+
+footer{
+    background-color: #292929;
+    padding-bottom: 15px;
+    padding-top: 8px;
+}
+.footer_list
+{
+    display: flex;
+    flex-flow: column nowrap;
+list-style: none;
+font-family: 'roboto';
+text-decoration: white;
+color: white;
+
+}
+
+.logo_menu
+{
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    
+}
+
+.banniere
+{
+    
+    width: 300px;
+    max-height: 300px;
+    
 }
