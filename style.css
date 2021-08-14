@@ -113,6 +113,7 @@
     width: 90%;
     height: 58px;
     margin: 10px;
+    
 
 }
 .numb
@@ -151,18 +152,22 @@
 
 #section_restau
 {
-
+   margin-top: 50px;
+   padding-top: 30px;
+   padding-bottom: 200px;
    background-color: #EEECEF ;
 
 }
 
 #title-restau
 {
+    margin-left: 15px;
     font-family: 'roboto';
 }
 
 .vignette_restaurant
 {
+    
     width: 255px;
     height: 200px;
     background-color: #ffffff;
@@ -187,6 +192,10 @@
     
     
 }
+.vignette_restaurant1
+{
+    margin-right: 40px;
+}
 .nom_restau
 {
     color: black;
@@ -208,3 +217,15 @@
 }
 
 
+.icn_rst
+{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    padding-bottom: 25px;
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+}
