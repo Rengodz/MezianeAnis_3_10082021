@@ -176,12 +176,12 @@
 .vignette_restaurant
 {
     
-    width: 255px;
+    width: 240px;
     height: 200px;
     background-color: #ffffff;
     border-radius: 10px;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 18px;
     margin-right: 10px;
     box-shadow: 2px 4px 2px #dfdbdb;
     padding-left: 30px;
@@ -190,10 +190,11 @@
 }
 .vignette_restaurant img 
 {
-    
-    width: 300px;
+    position: relative;
+    right: 35px;
+    width: 290px;
     max-height: 150px;
-    border-radius: 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     
 }
 .vignette_restaurant:hover
