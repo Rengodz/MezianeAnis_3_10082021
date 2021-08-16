@@ -191,7 +191,7 @@
 .vignette_restaurant img 
 {
     position: relative;
-    right: 35px;
+    right: 25px;
     width: 290px;
     max-height: 150px;
     border-radius: 10px 10px 0px 0px;
@@ -241,7 +241,7 @@
     color: grey;
 }
 
-a{
+footer a{
     text-decoration: none;
     margin-left: 10px;
     color: white;    
@@ -285,7 +285,59 @@ footer{
 .banniere
 {
     
-    width: 300px;
+    width: 345px;
     max-height: 300px;
     
+}
+.pagemenu_title
+{
+    margin-left: 15px;
+    font-family: 'Shrikhand';
+    
+}
+
+.menu_scroll
+{
+    position: relative;
+    bottom: 68px;
+    width: 347px;
+    height: 600px;
+    background-color: #EEECEF;
+    border-radius: 40px;
+      
+}
+
+.selection_btn
+{
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow:  0 0px 5px 2px #888;
+    font-family: 'roboto';
+    display: inline-flex;
+    align-items: center;
+    font-size: .9em;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 75px;
+    margin: 10px;
+}
+
+.entree_bt
+{
+    list-style: none;
+}
+
+.nom_menu
+{
+    font-family: 'roboto';
+    color: black;
+    size: 0.8em;
+
 }
