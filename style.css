@@ -275,6 +275,8 @@ footer{
 
 .logo_menu
 {
+    position: relative;
+    bottom: 15px;
     font-family: 'Shrikhand', cursive;
     display: flex;
     justify-content: center;
@@ -284,14 +286,17 @@ footer{
 
 .banniere
 {
-    
+    position: relative;
+    bottom: 30px;
     width: 345px;
     max-height: 300px;
     
 }
 .pagemenu_title
 {
-    margin-left: 15px;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
     font-family: 'Shrikhand';
     
 }
@@ -299,7 +304,7 @@ footer{
 .menu_scroll
 {
     position: relative;
-    bottom: 68px;
+    bottom: 90px;
     width: 347px;
     height: 1260px;
     background-color: #EEECEF;
@@ -327,14 +332,13 @@ footer{
     font-size: .9em;
     color: black;
     border-radius: 20px;
-    border: none;
-    width: 200px;
+    border: none; 
     cursor: pointer;
     height: 45px;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    height: 75px;
+    width: 100%;
+    height: 60px;
     margin: 10px;
     position: relative;
     right: 40px;
@@ -362,7 +366,7 @@ footer{
 {
    position: relative;
    left: 82px;
-   bottom: 50px;
+   bottom: 40px;
 }
 
 .entree_list
@@ -377,3 +381,15 @@ footer{
 }
 
 
+.ban_retour i
+{
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+    text-decoration: #292929;
+}
+.icn_rst
+{
+margin-left: 30px;
+font-size: 0.9em;
+}
