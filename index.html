@@ -1,129 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css"/>
-    
-    <script src="https://kit.fontawesome.com/6d73c8c34e.js" crossorigin="anonymous"></script>
-    
-    <title>OhMyFood!</title>
-	<meta name="description" content="Réservez le menu qui vous convient" />
-  </head>
-
-  <body>
-    <div id="page">
-  
-
-      <header>
-      
-          <h1 class="logo">ohmyfood</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/6d73c8c34e.js" crossorigin="anonymous"></script>
+        <title>OhMyFood!</title>
+        <meta name="description" content="Réservez le menu qui vous convient" />
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <h1 class="logo">ohmyfood</h1>
         </div>
-
         <div class="localisation">
             <i class="fas fa-map-marker-alt fa-sm gps"></i>
             <p class="ville">Paris, Belleville</p>
         </div>
-        
         <div class="headcase">
-        <h2 class="subtitles">Réservez le menu qui vous convient</h2>
-        <p class="subtitles--light">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <button type="submit" form="restaurants" value="Rechercher" class="rechercher">Explorer nos restaurants</button>
+            <h2 class="subtitles">Réservez le menu qui vous convient</h2>
+            <p class="subtitles--light">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <button type="submit" form="restaurants" value="Rechercher" class="rechercher">Explorer nos restaurants</button>
         </div>
-
         <div class="fonction">
             <h2 class="fonction_title">Fonctionnement</h2>
             <ul class="fonction_list">
-            
-            <li class="fonct_bt--choice">
-            <div class="fct_btn--choix_btn">
-                
-                <button type="submit" form="choice" value="Choisissez" class="choice_btn">
-                    <p class="numb">1</p>
-                    
-                    <i class="fas fa-mobile-alt icon_btn"></i><p class="choix_name">Choisissez un restaurant</p></button>
-            
-                </div>
-            </li>
-            <li class="fonct_bt--compo">
-                
-                <div class="fct_btn--compo_btn">
-                    
-                    <button type="submit" form="composition" value="Composez" class="choice_btn">
-                        <p class="numb">2</p>
-                        
-                        <i class="fas fa-list icon_btn"></i><p class="choix_name">Composez votre menu</p></button>
-                
+                <li class="fonct_bt--choice">
+                    <div class="fct_btn--choix_btn">
+                        <button type="submit" form="choice" value="Choisissez" class="choice_btn">
+                            <p class="numb">1</p>
+                            <i class="fas fa-mobile-alt icon_btn"></i>
+                            <p class="choix_name">Choisissez un restaurant</p>
+                        </button>
+                    </div>
+                </li>
+                <li class="fonct_bt--compo">
+                    <div class="fct_btn--compo_btn">
+                        <button type="submit" form="composition" value="Composez" class="choice_btn">
+                            <p class="numb">2</p>
+                            <i class="fas fa-list icon_btn"></i>
+                            <p class="choix_name">Composez votre menu</p>
+                        </button>
                     </div>
                 </li>
                 <li class="fonct_bt--degusation">
                     <div class="fct_btn--degustation_btn">
-                        
                         <button type="submit" form="degustation" value="degustez" class="choice_btn">
                             <p class="numb">3</p>
-                            
-                            <i class="fas fa-store shop_btn"></i><p class="choix_name">Dégustez au restaurant</p></button>
-                    
-                        </div>
-                    </li>
+                            <i class="fas fa-store shop_btn"></i>
+                            <p class="choix_name">Dégustez au restaurant</p>
+                        </button>
+                    </div>
+                </li>
             </ul>
         </div>
-
         <section id="section_restau">
             <h2 id="title-restau">Restaurants</h2>
             <div class="vignette_restaurant">
-                <a href="palette.html"><img src="src/images/restaurants/palettes.jpg"alt="La palette du gout" class="res"/>
-                    
-                        <p class="nom_restau">La palette du goût<i class="far fa-heart icn_rst"></i></p>
-                        
+                <a href="palette.html">                     
+                    <img src="src/images/restaurants/palettes.jpg" alt="La palette du gout" class="res" />
+                    <p class="nom_restau">La palette du goût <i class="far fa-heart icn_rst"></i>
+                    </p>
+                    <p class="new_logo">Nouveau</p>
                     <p class="ville_restau">Ménilmontant</p>
-                        
-                    </a>
-                    
+                </a>
             </div>
-
             <div class="vignette_restaurant">
-                <a href="note.html"><img src="src/images/restaurants/note.jpg"alt="La note enchantee" class="res"/>
-                    
-                        <p class="nom_restau">La note enchantée<i class="far fa-heart icn_rst"></i></p>
-                        
+                <a href="note.html">                                                            
+                    <img src="src/images/restaurants/note.jpg" alt="La note enchantee" class="res" />
+                    <p class="nom_restau">La note enchantée <i class="far fa-heart icn_rst"></i>
+                    </p>
+                    <p class="new_logo">Nouveau</p>
                     <p class="ville_restau">Charonne</p>
-                        
-                    </a>
-                    
+                </a>
             </div>
             <div class="vignette_restaurant">
-                <a href="french.html"><img src="src/images/restaurants/frenchtouch.jpg"alt="a la francaise" class="res"/>
-                    
-                        <p class="nom_restau">À la française<i class="far fa-heart icn_rst"></i></p>
-                        
+                <a href="french.html">
+                    <img src="src/images/restaurants/frenchtouch.jpg" alt="a la francaise" class="res" />
+                    <p class="nom_restau">À la française <i class="far fa-heart icn_rst"></i>
+                    </p>
                     <p class="ville_restau">Cité rouge</p>
-                        
-                    </a>
-                    
+                </a>
             </div>
-
             <div class="vignette_restaurant">
-                <a href="delice.html"><img src="src/images/restaurants/delice.jpg"alt="le delice des sens" class="res"/>
-                    
-                        <p class="nom_restau">Le délice des sens<i class="far fa-heart icn_rst"></i></p>
-                        
+                <a href="delice.html">
+                    <img src="src/images/restaurants/delice.jpg" alt="le delice des sens" class="res" />
+                    <p class="nom_restau">Le délice des sens <i class="far fa-heart icn_rst"></i>
+                    </p>
                     <p class="ville_restau">Folie-Méricourt</p>
-                        
-                    </a>
-                    
+                </a>
             </div>
-
-
         </section>
-
         <footer>
-
-        <h3 class=footer_logo>ohmyfood</h3>
-<ul class="footer_list">
-    <li><i class="fas fa-utensils icon_propos"></i><a href="">Proposer un restaurant</a></li>
-    <li><i class="fas fa-hands-helping icon_part"></i><a href="">Devenir partenaire</a></li>
-    <li><a href="">Mentions légales</a></li>
-    <li><a href="">Contact</a></li>
-</ul>
+            <h3 class=footer_logo>ohmyfood</h3>
+            <ul class="footer_list">
+                <li>
+                    <i class="fas fa-utensils icon_propos"></i>
+                    <a href="">Proposer un restaurant</a>
+                </li>
+                <li>
+                    <i class="fas fa-hands-helping icon_part"></i>
+                    <a href="">Devenir partenaire</a>
+                </li>
+                <li>
+                    <a href="">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
         </footer>
