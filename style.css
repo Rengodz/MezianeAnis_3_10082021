@@ -4,6 +4,103 @@
 
 
 
+.sand
+{
+   background: -webkit-gradient(linear, left top, left bottom, from(rgb(241, 14, 230)), to(rgb(184, 7, 197)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   position: relative;
+   left: 70px;
+   top: 5px;
+   font-size: 2em;
+   animation: rotation 2s infinite linear;
+   
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+
+.loading 
+{
+  position: fixed;
+  background: #fff;
+  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  z-index: 1000;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 3s linear;
+}
+.loading::after 
+{
+  content: "";
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border: 25px solid #f6f6f6;
+  border-top: 8px solid #9356dc;
+  border-right: 12px solid #ff79da;
+  border-bottom: 8px solid #99e2d0;
+  border-radius: 50%;
+  opacity: 0;
+  animation: rotat-loading 3s linear;
+}
+
+@keyframes loader 
+{
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes rotat-loading 
+{
+  0% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body 
+{
+  margin: 0;
+  padding: 0;
+}
+
+#page
+{
+    width: 100%;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0; 
+}
+
 .logo
 {
     font-family: 'Shrikhand', cursive;
@@ -15,13 +112,15 @@
 
 .localisation
 {
+    width: 100%;
+    margin: 0;
     justify-content: center;
     align-items: center;
     font-family: 'roboto';
     display: flex;
     margin-top: 5px;
     background-color: #E0E0E0;
-    box-shadow:  2px 0px 5px 0px #888;
+    box-shadow:  2px 0px 5px 0px #888; 
     
 }
 
@@ -180,12 +279,12 @@
 .vignette_restaurant
 {
     
-    width: 240px;
+    width: 290px;
     height: 200px;
     background-color: #ffffff;
     border-radius: 10px;
     margin-top: 15px;
-    margin-left: 18px;
+    margin-left: 30px;
     margin-right: 10px;
     box-shadow: 2px 4px 2px #dfdbdb;
     padding-left: 30px;
@@ -195,7 +294,7 @@
 .vignette_restaurant img 
 {
     position: relative;
-    right: 25px;
+    right: 30px;
     width: 290px;
     max-height: 150px;
     border-radius: 10px 10px 0px 0px;
@@ -239,6 +338,17 @@
     
 }
 
+.ville_restau1
+{
+    position: relative;
+    right: 28px;
+    bottom: 45px;
+    color: black;
+    padding-left: 10px;
+    font-family: 'roboto';
+    font-size: 0.9em;
+    height: 6px;
+}
 
 .icn_rst
 {
@@ -249,6 +359,13 @@
     margin-left: 200px;
     padding-bottom: 25px;
     color: grey;
+
+    }
+
+.icn_rst :hover
+{
+ transform:scale(5);
+ color: turquoise;
 }
 
 footer a{
@@ -377,7 +494,27 @@ footer{
     height: 60px;
     margin: 10px;
     position: relative;
-    right: 40px;
+    right: 40px; 
+}
+
+.valid_btn
+{
+    position: relative;
+    bottom: 45px;
+    left:210px;
+    color: honeydew;
+    transform: scaleX(1);
+    border: none;
+    
+}
+
+.valid_btn :hover {
+
+
+transform-origin: 20% 0%;
+transform: scaleX(2);
+transition: transform 1000ms; 
+background-color: green;
     
 }
 
