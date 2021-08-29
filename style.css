@@ -48,9 +48,9 @@
   display: inline-block;
   height: 120px;
   width: 120px;
-  border: 25px solid #f6f6f6;
-  border-top: 8px solid #9356dc;
-  border-right: 12px solid #ff79da;
+  border: 25px solid  #99e2d0;
+  border-top: 8px solid #99e2d0 ;
+  border-right: 12px solid #99e2d0;
   border-bottom: 8px solid #99e2d0;
   border-radius: 50%;
   opacity: 0;
@@ -440,6 +440,7 @@ footer{
     border-radius: 40px 40px 0px 0px;
     padding-bottom: 40px;
     
+    
       
 }
 
@@ -495,28 +496,10 @@ footer{
     margin: 10px;
     position: relative;
     right: 40px; 
-}
-
-.valid_btn
-{
-    position: relative;
-    bottom: 45px;
-    left:210px;
-    color: honeydew;
-    transform: scaleX(1);
-    border: none;
+    animation: apparition-progressive 5s;
     
 }
 
-.valid_btn :hover {
-
-
-transform-origin: 20% 0%;
-transform: scaleX(2);
-transition: transform 1000ms; 
-background-color: green;
-    
-}
 
 .nom_menu
 {
@@ -576,3 +559,63 @@ background-color: green;
     margin-bottom: 30px;
 
 }
+.nom_menu:nth-child(1) {
+    animation-delay: 800ms;
+  }
+  .nom_menu:nth-child(2) {
+    animation-delay: 1600ms;
+  }
+  .nom_menu:nth-child(3) {
+    animation-delay: 2400ms;
+  }
+  .nom_menu:nth-child(4) {
+    animation-delay: 3200ms;
+  }
+  .nom-menu:hover .prix_menu {
+    margin-right: 70px;
+  }
+  .nom_menu:hover .menu_validation {
+    transform: scale(1);
+    right: 0;
+  }
+  .nom_menu:hover .menu_validation::after {
+    transform: rotate(360deg);
+  }
+  .menu_validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background: #99e2d0;
+    transform: scale(0);
+    transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5), right 500ms ease-in-out;
+  }
+  .menu_validation::after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    background-color: #99e2d0;
+    color: #fff;
+    transform: rotate(180deg);
+    width: 26px;
+    height: 26px;
+    transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
+  }
+  @keyframes apparition-progressive {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
