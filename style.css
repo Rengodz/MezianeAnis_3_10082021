@@ -13,8 +13,7 @@
    left: 70px;
    top: 5px;
    font-size: 2em;
-   animation: rotation 2s infinite linear;
-   
+   animation: rotation 2s infinite linear;  
 }
 
 @keyframes rotation {
@@ -100,6 +99,17 @@ body
     border:0;
     outline:0; 
 }
+
+#page_menu
+{
+    width: 100%;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0; 
+}
+
+
 
 .logo
 {
@@ -291,6 +301,7 @@ body
     padding-right: 30px;
     margin-bottom: 15px;
 }
+
 .vignette_restaurant img 
 {
     position: relative;
@@ -302,8 +313,10 @@ body
 }
 .vignette_restaurant:hover
 {
-    background-color: #deebff;
-    transform: scale(1.04);
+    opacity: 0.9;
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    filter: alpha(opacity=0.5);
 }
 .vignette_restaurant a 
 {
@@ -350,8 +363,8 @@ body
     height: 6px;
 }
 
-.icn_rst
-{
+
+.icn_rst {
     position: relative;
     left: 35px;
     bottom:10px;
@@ -359,13 +372,18 @@ body
     margin-left: 200px;
     padding-bottom: 25px;
     color: grey;
-
-    }
-
-.icn_rst :hover
-{
- transform:scale(5);
- color: turquoise;
+    padding:.2em;
+}
+.icn_rst::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.icn_rst:hover::before{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(241, 14, 230)), to(rgb(184, 7, 197)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 
 footer a{
@@ -402,6 +420,7 @@ footer{
 
 .logo_menu
 {
+
     position: relative;
     bottom: 15px;
     font-family: 'Shrikhand', cursive;
@@ -419,9 +438,11 @@ footer{
     width: 345px;
     max-height: 300px;
     
+    
 }
 .pagemenu_title
 {
+    
     position: relative;
     top: 20px;
     margin-left: 20px;
@@ -562,26 +583,26 @@ footer{
 .nom_menu:nth-child(1) {
     animation-delay: 800ms;
   }
-  .nom_menu:nth-child(2) {
+.nom_menu:nth-child(2) {
     animation-delay: 1600ms;
   }
-  .nom_menu:nth-child(3) {
+.nom_menu:nth-child(3) {
     animation-delay: 2400ms;
   }
-  .nom_menu:nth-child(4) {
+.nom_menu:nth-child(4) {
     animation-delay: 3200ms;
   }
-  .nom-menu:hover .prix_menu {
+.nom-menu:hover .prix_menu {
     margin-right: 70px;
   }
-  .nom_menu:hover .menu_validation {
+.nom_menu:hover .menu_validation {
     transform: scale(1);
     right: 0;
   }
-  .nom_menu:hover .menu_validation::after {
+.nom_menu:hover .menu_validation::after {
     transform: rotate(360deg);
   }
-  .menu_validation {
+.menu_validation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,7 +615,7 @@ footer{
     transform: scale(0);
     transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5), right 500ms ease-in-out;
   }
-  .menu_validation::after {
+.menu_validation::after {
     content: "";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -611,7 +632,8 @@ footer{
     height: 26px;
     transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
   }
-  @keyframes apparition-progressive {
+  
+@keyframes apparition-progressive {
     from {
       opacity: 0;
     }
