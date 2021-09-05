@@ -6,122 +6,143 @@
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/6d73c8c34e.js" crossorigin="anonymous"></script>
         <title>lapalettedugout</title>
-        <meta name="description" content="Restaurant la palette du gout" />
+        <meta name="description" content="la palette du gout" />
     </head>
 
     <body>
         
-        <div id="page_rst">
-            <header>
-                <div class="ban_retour">
-                    <a href="index.html">
-                        <i class="fas fa-arrow-left ban-retour_fleche"></i>
-                    </a>
-                </div>
-                <h1 class="logo_menu">ohmyfood</h1>
-                <div class="banniere_img">
-                    <img src="src/images/restaurants/palettes.jpg" alt="La palette du gout" class="banniere" />
+        <header class="banniere">
+            <a href="index.html"><i class="fas fa-arrow-left en-tete__retour"></i></a>
+            <h1 class="title_logo">ohmyfood</h1>
+        </header>   
+        
+        <main class="conteneur"> 
+             
+            <img src="src/images/restaurants/palettes.jpg" alt="La palette du goût" class="img"/>
+            
+            <div class="menu">
                 
-            </header>
-            <body id="page_menu">
-                <div class="menu_scroll">
-                    <h2 class="pagemenu_title">La palette du goût <i class="far fa-heart ttl_icn"></i>
-                    </h2>
-            </body>
-            <section class=entrees>
-                <h3 class="entree_title">ENTRÉES</h3>
-                <ul class="entree_list">
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Fricassée d'escargot</p>
-                                <p class="sub_menu">Au piment d'espelette</p>
-                                <p class="prix_menu">25 €</p>
-                                <div class="menu_validation"></div>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Foie gras de canard mi-cuit</p>
-                                <p class="sub_menu">Et ses copeaux de truffe noire</p>
-                                <p class="prix_menu">35 €</p>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Oeuf au plat</p>
-                                <p class="sub_menu">Assaisonné à la truffe sur lit de...</p>
-                                <p class="prix_menu">20 €</p>
-                            </button>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class=entrees>
-                <h3 class="entree_title">PLATS</h3>
-                <ul class="entree_list">
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Filet de boeuf aux herbes</p>
-                                <p class="sub_menu">Accompagné de sa ribambelle de légu...</p>
-                                <p class="prix_menu">40 €</p>
-                            </button>
-                        </div>
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Parmentier de queue de boeuf</p>
-                                <p class="sub_menu">À la truffe noire sur sa purée de panais</p>
-                                <p class="prix_menu">35 €</p>
-                            </button>
-                        </div>
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Filet de Turbot</p>
-                                <p class="sub_menu">Aux agrumes</p>
-                                <p class="prix_menu">44 €</p>
-                            </button>
-                        </div>
-                </ul>
-            </section>
-            <section class=entrees>
-                <h3 class="entree_title">DESSERTS</h3>
-                <ul class="entree_list">
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Paris-Brest</p>
-                                <p class="sub_menu">Revisité</p>
-                                <p class="prix_menu">18 €</p>
-                            </button>
-                        </div>
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Macaron au chocolat d'exception</p>
-                                <p class="sub_menu">Et glace à la vanille de Madagascar</p>
-                                <p class="prix_menu">22 €</p>
-                            </button>
-                        </div>
-                    <li class="entree_bt--selection">
-                        <div class="entree_btn--selection_btn">
-                            <button type="submit" form="selection" value="selectionnez" class="selection_btn">
-                                <p class="nom_menu">Mousse au chocolat</p>
-                                <p class="sub_menu">Au piment d'espelette et à la truffe noire</p>
-                                <p class="prix_menu">23 €</p>
-                            </button>
-                        </div>
-                </ul>
-                <div class="btn_commander">
-                    <button type="submit" form="restaurants" value="Rechercher" class="rechercher">Commander</button>
+                <div class="menu_resto">
+                    <h2 class="menu_compo">La palette du goût</h2>
+                    <button class="menu_heart">
+                        <i class="far fa-heart menu_like menu_like--vide"></i>
+                        <i class="far fa-heart menu_like menu_like--plein"></i>
+                    </button>
                 </div>
-        </div>
+                
+                <section class="menu_composition">
+                    <h3 class="menu_legend">entrées</h3>
+                    
+                    <div class="menu_ingredient">
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Fricassée d'escargot</h4>
+                                <p>Au piment d'Espelette</p>
+                            </div>
+                            <p class="menu_price">25&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Foie gras de canard mi-cuit</h4>
+                                <p>Et ses copeaux de truffe noire</p>
+                            </div>
+                            <p class="menu_price">35&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Oeuf au plat</h4>
+                                <p>Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <p class="menu_price">20&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+                    </div>
+                </section>
+                
+                <section class="menu_composition">
+                    <h3 class="menu_legend">plats</h3>
+                    
+                    <div class="menu_ingredient">
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Filet de boeuf aux herbes</h4>
+                                <p>Accompagné de sa ribambelle de légumes</p>
+                            </div>
+                            <p class="menu_price">40&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Parmentier de queue de boeuf</h4>
+                                <p>À la truffe noire sur sa purée de panais</p>
+                            </div>
+                            <p class="menu_price">35&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Filet de turbot</h4>
+                                <p>Aux agrumes</p>
+                            </div>
+                            <p class="menu_price">44&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+                    </div>
+                </section>
+                
+                
+                <section class="menu_composition">
+                    <h3 class="menu_legend">desserts</h3>
+                    
+                    <div class="menu__ingredient">
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Paris-Brest</h4>
+                                <p>Revisité</p>
+                            </div>
+                            <p class="menu_price">18&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Macaron au chocolat d'exception</h4>
+                                <p>Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <p class="menu_price">22&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+
+                        <article class="menu_plat">
+                            <div class="menu_detail">
+                                <h4 class="menu_title">Mousse au chocolat </h4>
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <p class="menu_price">23&euro;</p>
+                            
+                            <div class="menu_validation"></div>
+                        </article>
+                    </div>
+                </section>
+                <div class="menu_commande">
+                    <button class="menu_btn">Commander</button>
+                </div>
+            </div>   
+        </main>
         <footer>
             <h3 class=footer_logo>ohmyfood</h3>
             <ul class="footer_list">
