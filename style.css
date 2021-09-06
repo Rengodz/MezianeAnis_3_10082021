@@ -326,6 +326,24 @@ margin-left: 15px;
     
 }
 
+.new_logo
+{
+    padding-top: 5px;
+    color: #257D43;
+    font-size: 0.8;
+    position: relative;
+    bottom:165px;
+    left: 170px;
+    font-family: 'roboto';
+    font-variant: bolder;
+    box-sizing: content-box;
+    width:70px ;
+    height: 25px;
+    padding-left: 10px;
+    background-color: #99E2D0;
+
+}
+
 .ville_restau
 {
     position: relative;
@@ -492,6 +510,7 @@ footer{
     margin-bottom: 35px;
   }
   .menu_legend {
+    margin-left: 15px;
     font-family: 'roboto';
     text-transform: uppercase;
     margin-bottom: 20px;
