@@ -330,12 +330,12 @@ margin-left: 15px;
 {
     padding-top: 5px;
     color: #257D43;
-    font-size: 0.8;
+    font-size: 0.8em;
     position: relative;
     bottom:165px;
     left: 170px;
     font-family: 'roboto';
-    font-variant: bolder;
+    font-weight: bolder;
     box-sizing: content-box;
     width:70px ;
     height: 25px;
